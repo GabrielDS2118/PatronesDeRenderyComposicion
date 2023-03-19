@@ -38,4 +38,16 @@ Los principios de diseño en React:
         Se refiere que a React siempre va a dejarte pistas un rastro predecible, 
         donde podamos buscar los errores en nuestra aplicación.
 
+Composición
 
+    Patron o pricipio para crear componentes,
+    Determinar donde y como los usamos 
+
+    Evita enviar estados entre componentes,
+    y el algunos casos nos evita el Context
+
+    Nos permite reutilizar nuestros componentes aún más.
+
+    En vez de que el componente decida que irá dentro de el
+    Se le delega esta responsiblidad al componente padre
+    Mediante la prop children
