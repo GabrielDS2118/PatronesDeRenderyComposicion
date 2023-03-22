@@ -51,3 +51,18 @@ Composición
     En vez de que el componente decida que irá dentro de el
     Se le delega esta responsiblidad al componente padre
     Mediante la prop children
+
+
+Render Props y Render Functions
+
+    Nos permiten llevar la composición a otro nivel
+    Nos permite ser más especificos sobre que,cuando y donde vamos a renderizar
+    Composicion mucho más limpia
+
+    render function
+        Entregar la informacion que va a renderizar un componente en una función 
+    
+    render props
+        Propiedades funcion
+
+

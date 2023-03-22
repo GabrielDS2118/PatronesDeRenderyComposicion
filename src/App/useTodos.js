@@ -62,6 +62,7 @@ function useTodos() {
     deleteTodo,
     openModal,
     setOpenModal,
+    todos,
   };
 }
 
