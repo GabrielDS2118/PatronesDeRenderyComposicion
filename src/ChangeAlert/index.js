@@ -1,8 +1,9 @@
 import React from 'react';
-import withStorageListener from './withStorageListener';
+import useStorageListener from './useStorageListener';
 import './ChangeAlert.css';
 
-function ChangeAlert({ show, toggle }) {
+function ChangeAlert({ sincronize }) {
+  const { show, toggleShow } = useStorageListener(sincronize);
   if (show) {
     return (
       <div className="ChangeAlert-bg">
@@ -14,7 +15,7 @@ function ChangeAlert({ show, toggle }) {
           <p>¿Quieres sincronizar tus TODOs?</p>
           <button
             className="TodoForm-button TodoForm-button--add"
-            onClick={toggle}
+            onClick={toggleShow}
           >
             Yes!
           </button>
@@ -26,6 +27,4 @@ function ChangeAlert({ show, toggle }) {
   }
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert);
-
-export default ChangeAlertWithStorageListener;
+export default ChangeAlert;
