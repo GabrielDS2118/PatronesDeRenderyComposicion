@@ -65,4 +65,8 @@ Render Props y Render Functions
     render props
         Propiedades funcion
 
+Estados Derivados
+    Estados que se crean a partir de otros:
+        El estado de todos completados es derivado porque depende del estado todos
+
 
